@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: shendu-provider
+  profiles:
+    active:
+    - dev
+  cloud:
+    nacos:
+      config:
+        namespace: 806f98fd-8de7-4abe-b59f-61a9c7ab839f
+        group: DEV
+        file-extension: yaml
+        server-addr: http://register.eoocloud.com
+      discovery:
+        namespace: 806f98fd-8de7-4abe-b59f-61a9c7ab839f
+        group: DEV
+        server-addr: http://register.eoocloud.com
